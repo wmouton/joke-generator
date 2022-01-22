@@ -3,9 +3,15 @@ import './App.css';
 
 function App() {
   useEffect(() => {
-    const fetchJoke = async () => {
-      await fetch(`http://api.icndb.com/jokes/random?firstName=L33th&lastName=AI`);
-    };
+    const fetchJoke = async () =>
+      await fetch(
+        `http://api.icndb.com/jokes/random?firstName=Dude&lastName=AI`
+      )
+        .then(res => res.json())
+        .then(data => {
+          console.log(data.value.joke);
+        });
+    fetchJoke();
   }, []);
 
   return (
