@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import { useState, useEffect} from 'react';
 
 const useRandomJoke = () => {
     const [joke, setJoke] = useState('');
@@ -14,6 +14,7 @@ const useRandomJoke = () => {
             });
         fetchJoke();
       }, []);
+      return joke;
 };
 
 export default useRandomJoke;
