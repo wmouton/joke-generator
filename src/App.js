@@ -7,17 +7,7 @@ function App() {
   // Custom Hook
   // const joke = useRandomJoke('Dude', 'AI');
 
-  useEffect(() => {
-    const fetchJoke = async () =>
-      await fetch(
-        `http://api.icndb.com/jokes/random?firstName=Dude&lastName=AI`
-      )
-        .then(res => res.json())
-        .then(data => {
-          setJoke(data.value.joke);
-        });
-    fetchJoke();
-  }, []);
+  
 
   return (
     <div className='App'>
