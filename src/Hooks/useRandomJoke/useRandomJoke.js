@@ -13,7 +13,7 @@ const useRandomJoke = (firstName, lastName) => {
               setJoke(data.value.joke);
             });
         fetchJoke();
-      }, []);
+      }, [firstName, lastName]);
       return joke;
 };
 
