@@ -1,13 +1,8 @@
-import { useEffect, useState } from 'react';
 import './App.css';
+import useRandomJoke from './Hooks/useRandomJoke/useRandomJoke';
 
 function App() {
-  const [joke, setJoke] = useState('');
-
-  // Custom Hook
-  // const joke = useRandomJoke('Dude', 'AI');
-
-  
+  const joke = useRandomJoke();
 
   return (
     <div className='App'>
