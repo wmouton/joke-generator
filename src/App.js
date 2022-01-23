@@ -3,6 +3,10 @@ import './App.css';
 
 function App() {
   const [joke, setJoke] = useState('');
+
+  // Custom Hook
+  // const joke = useRandomJoke('Dude', 'AI');
+
   useEffect(() => {
     const fetchJoke = async () =>
       await fetch(
