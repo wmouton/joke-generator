@@ -6,9 +6,11 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>Joke Generator Setup</h1>
-      <h2>{joke}</h2>
-      <button>Generate Joke</button>
+      <center>
+        <h1>Joke Generator Setup</h1>
+        <h2>{joke}</h2>
+        <button>Generate Joke</button>
+      </center>
     </div>
   );
 }
